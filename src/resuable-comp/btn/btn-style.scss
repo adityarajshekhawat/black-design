@@ -1,0 +1,39 @@
+@keyframes glow {
+  0% {
+    background-color: none;
+  }
+  100% {
+    background-color: rgb(114, 63, 63);
+  }
+}
+
+#btn-atag {
+  width: 25vh;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  //   background-color: /aqua;
+  margin: 5vh;
+
+  #btn-logodiv {
+    width: 5vh;
+    height: 5vh;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  #btn-text {
+    padding-right: 2vh;
+  }
+}
+#btn-atag:hover {
+  // background-color: beige;
+  border-radius: 5vh;
+  //   transition: background-color 0.5s ease-in-out;
+  animation: glow 1s;
+}

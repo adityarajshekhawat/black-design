@@ -1,0 +1,265 @@
+.animate-effect {
+  /* Define your animation properties here */
+  animation-name: bounce;
+  animation-duration: 0.8s;
+
+  animation-fill-mode: forwards;
+}
+.animate-effect-left {
+  /* Define your animation properties here */
+  animation-name: leftenter;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+.animate-effect-right {
+  /* Define your animation properties here */
+  animation-name: rightenter;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home-no {
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  // pointer-events: none;
+  position: relative;
+}
+
+#home-homediv1,
+#home-homediv2 {
+  width: 100%;
+  height: 50vh;
+  z-index: 1;
+  animation: fadein 0.8s ease-in-out;
+}
+
+#home-homediv1 {
+  background-color: rgb(255, 255, 255);
+}
+
+#home-homediv2 {
+  background-color: black;
+}
+
+#home-imagesliderdiv {
+  width: 100%;
+  height: 90vh;
+  position: absolute;
+  z-index: 99;
+  top: 10vh;
+  left: 0;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  animation: big 01.5s ease-in-out;
+
+  #home-imageslider {
+    /* Corrected selector */
+    width: 90%;
+    height: 76vh;
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    align-content: center;
+    padding-left: 20vh;
+    position: relative;
+    background-image: url("../assets/bg1.jpg");
+    background-position: center;
+    background-size: cover;
+    transition: background-image 0.1s ease-in-out;
+
+    .home-h5 {
+      font-size: large;
+      letter-spacing: 2px;
+      line-height: 0.5;
+      margin-bottom: 3vh;
+      animation: big 1.6s ease-in-out;
+    }
+
+    .home-h1 {
+      font-family: "Poppins";
+      font-size: 13vh;
+      //   line-height: 1.8;
+      letter-spacing: 0.3rem;
+      animation: big 1.7s ease-in-out;
+    }
+
+    .home-p {
+      max-width: 80vh;
+      //   padding: ?vh 0;?
+      animation: big 1.8s ease-in-out;
+    }
+    #home-viewbtn {
+      background-color: rgb(255, 255, 255);
+      width: 25vh;
+      height: 5vh;
+      display: flex;
+      align-items: center;
+      border-radius: 3vh;
+      text-align: center;
+      position: relative;
+      animation: big 1.9s ease-in-out;
+
+      // display: none;
+
+      #home-btn {
+        border: 2px solid red;
+        width: 5vh;
+        height: 5vh;
+        border-radius: 50%;
+        background-color: rgb(96, 80, 80);
+        color: rgb(226, 90, 90);
+        animation: big 2s ease-in-out;
+
+        // position: absolute;
+        // right: 5vh;
+      }
+      #home-btn-p {
+        color: rgb(226, 83, 83);
+        width: 18vh;
+        // height: 20%;
+        animation: big 2s ease-in-out;
+      }
+    }
+  }
+
+  #home-sidebtndiv {
+    width: 1vh;
+    position: absolute;
+    right: 5vh;
+    top: 18vh;
+
+    .home-sidebtn-img {
+      // border: solid 2px rgb(255, 255, 255);
+      border-radius: 50%;
+      width: 6vh;
+    }
+  }
+
+  #home-slidercontroldiv {
+    width: 90%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 0vh 5vh;
+
+    #home-leftbtn,
+    #home-rightbtn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: x-large;
+
+      .home-hello {
+        width: 5vh;
+      }
+    }
+    #home-leftbtn {
+      animation: leftenter;
+      animation-duration: 02.2s;
+    }
+    #home-rightbtn {
+      animation: rightenter;
+      animation-duration: 02.2s;
+    }
+    #home-leftbtn p {
+      padding-bottom: 1vh;
+      animation: leftenter;
+      animation-duration: 02s;
+    }
+    #home-rightbtn p {
+      padding-bottom: 1vh;
+      margin-right: 2vh;
+      animation: rightenter;
+      animation-duration: 02s;
+    }
+    #home-countshow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: bounce 2.5s ease-out;
+
+      #home-countshow h1 {
+        padding: 5px;
+      }
+    }
+  }
+}
+#home-threepointstrip {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(255, 255, 255);
+  opacity: 0;
+
+  .home-box {
+    width: 45vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    .home-box svg {
+      margin: 2vh;
+      fill: rgb(129, 126, 126);
+    }
+    .home-box h5 {
+      color: rgb(129, 126, 126);
+    }
+  }
+}
+@media (max-width: 786px) {
+  #home-homediv1,
+  #home-homediv2 {
+    display: none;
+  }
+  #home-imagesliderdiv {
+    box-sizing: content-box;
+    position: fixed;
+    width: 24%;
+    height: 60vh;
+    padding-top: 7vh;
+    margin: 0;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  #home-imagesliderdiv #home-imageslider .home-h1 {
+    font-family: "Poppins";
+    font-size: 4vh;
+    letter-spacing: 0.3rem;
+
+    padding-right: 5vh;
+  }
+  #home-viewbtn,
+  button {
+    width: 2vh;
+    height: 2vh;
+  }
+  #home-sidebtndiv {
+    display: none;
+  }
+  #home-threepointstrip {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 100vh;
+    left: 0;
+  }
+}

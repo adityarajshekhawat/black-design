@@ -1,0 +1,139 @@
+.news-slider-container {
+  width: 100%;
+  height: 120vh;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+
+  #news-maincunt {
+    width: 210vh;
+    height: 120vh;
+    position: absolute;
+    right: -20vh;
+    // overflow: hidden;
+  }
+
+  .news-box {
+    width: 90vh;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    // margin-right: 100vh;
+    img {
+      width: 68vh;
+      height: 50vh;
+      filter: brightness(70%);
+      // filter: grayscale(0.2);
+      // filter: drop-shadow(16px 16px 20px rgb(231, 231, 231));
+    }
+    .newstextdiv {
+      background-color: black;
+      padding: 3vh;
+      padding-bottom: 5vh;
+    }
+    h6 {
+      padding-bottom: 2vh;
+    }
+    p {
+      position: absolute;
+      top: 48.5vh;
+      padding-left: 4vh;
+    }
+  }
+}
+
+.news-slider-container {
+  background-color: #f4f4f4; /* White background */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+  padding: 10px; /* Optional padding */
+}
+
+.news-box {
+  background-color: #f4f4f4; /* White background for slides */
+  //   border: 1px solid #ddd; /* Optional border around each slide */
+  padding: 15px; /* Optional padding for content within slides */
+  //   text-align: center; /* Center text content in slides */
+}
+
+.news-box img {
+  max-width: 100%; /* Ensure images scale proportionally */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+}
+
+.slick-dots {
+  /* Style the slider dots (optional) */
+  display: flex;
+  justify-content: center;
+  //   margin-top: 40vh; /* Adjust spacing between dots and slider content */
+}
+
+.slick-dots button {
+  /* Style the individual dot elements (optional) */
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #ccc; /* Adjust dot color */
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.slick-dots button:hover {
+  opacity: 1; /* Change dot opacity on hover (optional) */
+}
+
+#news-textdiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 50vh;
+  padding-left: 2vh;
+  margin: 5vh 0;
+
+  #news-tt {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      //   width: 20vh;
+
+      display: flex;
+      align-items: center;
+      letter-spacing: 4px;
+      color: rgb(75, 75, 75);
+      font-weight: 300;
+      #news-icon {
+        width: 2.5vh;
+        height: 2.5vh;
+        background-color: black;
+        border-radius: 50%;
+        margin-right: 1vh;
+      }
+    }
+    h1 {
+      display: flex;
+      align-items: center;
+      font-size: 6vh;
+      // padding: 1vh;
+    }
+
+    #news-light {
+      width: 100%;
+      font-weight: 500;
+    }
+    #news-bold {
+      margin-left: 2vh;
+    }
+  }
+}
+
+#news-btndiv {
+  display: grid;
+  //   justify-content: center;
+
+  align-items: center;
+}

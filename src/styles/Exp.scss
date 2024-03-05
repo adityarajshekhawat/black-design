@@ -1,0 +1,87 @@
+#exp-maina {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: rgb(235, 233, 233);
+  opacity: 0;
+  //   justify-content: space-evenly;
+}
+
+#exp-heroleft {
+  width: 40%;
+  height: 70vh;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    font-size: 20vh;
+    letter-spacing: -0.9vh;
+    line-height: 19vh;
+  }
+  #exp-textdiv {
+    margin-left: 12vh;
+  }
+}
+
+#exp-heroright {
+  width: 50%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#exp-maina table {
+  //   border: 1px solid #ddd;
+  border-collapse: collapse;
+  width: 100%; /* Adjust width as needed */
+  margin-left: 12vh;
+
+  td {
+    padding: 8vh 0;
+    border: 1px solid red;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    width: auto;
+  }
+  tr {
+    border: 1px solid pink;
+  }
+}
+
+#left1 {
+  font-size: 100px;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+}
+#left2 {
+  font-size: x-large;
+  font-weight: bold;
+  color: #ffffff;
+}
+.experience {
+  display: flex;
+  justify-content: space-between;
+  padding: 10%;
+  background-color: rgb(255, 255, 255);
+}
+
+#right-exp {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Create 3 equal-width columns */
+  gap: 1px; /* Add a gap between grid items */
+  background-color: rgb(255, 255, 255);
+}
+
+#itm1 {
+  background-color: #ffffff;
+  padding: 40px;
+  background-color: rgb(224, 221, 221);
+  color: aliceblue;
+}
